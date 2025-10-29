@@ -36,3 +36,20 @@ GROUP BY
 ORDER BY
     st.countryname;
 
+ Explanation;
+
+1.We calculate how much money each store made in 2023, separating it by store size (small, medium, large).
+
+2.To get the data, we combine information from both the sales table and the store table.
+
+3.We ignore any “Online” stores.
+
+4.Then, we add up the revenue for each store size in each country.
+
+5.Finally, we group the results by country and sort them alphabetically so it’s easy to read.
+
+## 📊 Revenue Insights by Store Size and Country
+*Visual representation of how small, medium, and large stores contribute to total revenue in 2023.*
+![47abfa6-1f24-de7a-6630-cc8ce2440178_1](https://github.com/user-attachments/assets/458c3ff0-6ec7-4f12-b870-f2f76d630104)
+
+
