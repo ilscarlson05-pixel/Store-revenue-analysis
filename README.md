@@ -48,6 +48,18 @@ ORDER BY
 
 5.Finally, we group the results by country and sort them alphabetically so it’s easy to read.
 
+## 🧰 Tools I Used— Revenue by Store Size and Country
+
+ **SQL** – For querying and analyzing store sales data  
+ **PostgreSQL** – Used to execute and test SQL queries  
+ **CASE WHEN Statements** – To calculate revenue for different store sizes  
+ **Aggregate Functions (SUM)** – To compute total revenue values  
+ **JOIN Operations** – To combine sales and store data  
+ **GROUP BY and ORDER BY** – To organize results by country  
+ **Data Filtering (WHERE Clause)** – To focus on 2023 data and exclude online stores  
+ **Data Visualization (Optional)** – For creating charts showing revenue by store size and country
+
+
 ## 📊 Revenue Insights by Store Size and Country
 *Visual representation of how small, medium, and large stores contribute to total revenue in 2023.*
 ![47abfa6-1f24-de7a-6630-cc8ce2440178_1](https://github.com/user-attachments/assets/458c3ff0-6ec7-4f12-b870-f2f76d630104)
