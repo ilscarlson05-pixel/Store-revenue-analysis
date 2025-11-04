@@ -31,26 +31,6 @@ This helps analyze revenue contribution from various store sizes across regions.
 - Exclude `"Online"` stores
 - Group by country name
 - Order by country name
-
----
-
-## 💡 SQL Solution
-```sql
-SELECT
-    st.countryname,
-    SUM(CASE WHEN st.squaremeters < 1000 THEN s.quantity * s.netprice * s.exchangerate ELSE 0 END) AS revenue_small_store,
-    SUM(CASE WHEN st.squaremeters BETWEEN 1000 AND 2000 THEN s.quantity * s.netprice * s.exchangerate ELSE 0 END) AS revenue_medium_store,
-    SUM(CASE WHEN st.squaremeters > 2000 THEN s.quantity * s.netprice * s.exchangerate ELSE 0 END) AS revenue_large_store
-FROM
-    sales s
-    LEFT JOIN store st ON s.storekey = st.storekey
-WHERE
-    s.orderdate BETWEEN '2023-01-01' AND '2023-12-31'
-    AND st.countryname != 'Online'
-GROUP BY
-    st.countryname
-ORDER BY
-    st.countryname;
 ⚙️ Process
 
 1.Data Preparation
@@ -114,6 +94,26 @@ This SQL project demonstrates how to use conditional aggregation to segment and 
 By combining SUM and CASE WHEN logic, we can easily break down total revenue by category without needing multiple queries.
 
 📈 The results highlight how SQL can support strategic business analysis, helping organizations understand where their physical retail footprint performs best.
+---
+
+## 💡 SQL Solution
+```sql
+SELECT
+    st.countryname,
+    SUM(CASE WHEN st.squaremeters < 1000 THEN s.quantity * s.netprice * s.exchangerate ELSE 0 END) AS revenue_small_store,
+    SUM(CASE WHEN st.squaremeters BETWEEN 1000 AND 2000 THEN s.quantity * s.netprice * s.exchangerate ELSE 0 END) AS revenue_medium_store,
+    SUM(CASE WHEN st.squaremeters > 2000 THEN s.quantity * s.netprice * s.exchangerate ELSE 0 END) AS revenue_large_store
+FROM
+    sales s
+    LEFT JOIN store st ON s.storekey = st.storekey
+WHERE
+    s.orderdate BETWEEN '2023-01-01' AND '2023-12-31'
+    AND st.countryname != 'Online'
+GROUP BY
+    st.countryname
+ORDER BY
+    st.countryname;
+
 
 
 
