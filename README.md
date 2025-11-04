@@ -31,7 +31,8 @@ This helps analyze revenue contribution from various store sizes across regions.
 - Exclude `"Online"` stores
 - Group by country name
 - Order by country name
-⚙️ Process
+- 
+## ⚙️ Process
 
 1.Data Preparation
 
@@ -54,7 +55,7 @@ Removed “Online” stores from results for a clearer country comparison.
 5.Grouping and Sorting
 
 Grouped by countryname and ordered alphabetically for readability.
-💡 Project Insights
+## 💡 Project Insights
 
 🏢 Large stores generated the majority of revenue in most countries, showing strong contribution from high-capacity outlets.
 
@@ -66,7 +67,7 @@ Grouped by countryname and ordered alphabetically for readability.
 
 💰 Overall, there’s a clear correlation between store size and revenue potential across different markets.
 
- Explanation;
+ ## Explanation;
 
 1.We calculate how much money each store made in 2023, separating it by store size (small, medium, large).
 
@@ -88,7 +89,7 @@ Grouped by countryname and ordered alphabetically for readability.
  **GROUP BY and ORDER BY** – To organize results by country  
  **Data Filtering (WHERE Clause)** – To focus on 2023 data and exclude online stores  
  **Data Visualization (Optional)** – For creating charts showing revenue by store size and country
-🧾 Conclusion
+## 🧾 Conclusion
 
 This SQL project demonstrates how to use conditional aggregation to segment and analyze store performance by physical size and geography.
 By combining SUM and CASE WHEN logic, we can easily break down total revenue by category without needing multiple queries.
