@@ -34,25 +34,25 @@ This helps analyze revenue contribution from various store sizes across regions.
 - 
 ## ⚙️ Process
 
-1.Data Preparation
+1️⃣.Data Preparation
 
 Selected relevant columns from the sales and store tables.
 
 Filtered the dataset to only include transactions from 2023.
 
-2.Data Joining
+2️⃣.Data Joining
 
 Used a LEFT JOIN to connect sales with store details.
 
-3.Conditional Aggregation
+3️⃣.Conditional Aggregation
 
 Used SUM(CASE WHEN) to calculate revenue for each store size category: small, medium, and large.
 
-4.Exclusion of Online Stores
+4️⃣.Exclusion of Online Stores
 
 Removed “Online” stores from results for a clearer country comparison.
 
-5.Grouping and Sorting
+5️⃣.Grouping and Sorting
 
 Grouped by countryname and ordered alphabetically for readability.
 ## 💡 Project Insights
