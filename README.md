@@ -118,8 +118,5 @@ ORDER BY
 
 
 
-## 📊 Revenue Insights by Store Size and Country
-*Visual representation of how small, medium, and large stores contribute to total revenue in 2023.*
-![47abfa6-1f24-de7a-6630-cc8ce2440178_1](https://github.com/user-attachments/assets/458c3ff0-6ec7-4f12-b870-f2f76d630104)
 
 
