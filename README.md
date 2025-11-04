@@ -96,6 +96,9 @@ By combining SUM and CASE WHEN logic, we can easily break down total revenue by 
 
 📈 The results highlight how SQL can support strategic business analysis, helping organizations understand where their physical retail footprint performs best.
 ---
+## 📊 Revenue by Store Size and Country (SQL Result)
+
+![Revenue by Store Size and Country](https://raw.githubusercontent.com/ilscarlson05-pixel/Store-revenue-analysis/main/47abfa6-1f24-de7a-6630-cc8ce2440178_1.webp)
 
 ## 💡 SQL Solution
 ```sql
@@ -114,6 +117,11 @@ GROUP BY
     st.countryname
 ORDER BY
     st.countryname;
+
+✍️ Author
+
+Davlataliev Ilyosbek
+💼 Data Analytics Enthusiast | SQL, Excel & BI Learner
 
 
 
