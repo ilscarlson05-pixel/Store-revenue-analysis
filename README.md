@@ -100,6 +100,14 @@ By combining SUM and CASE WHEN logic, we can easily break down total revenue by 
 
 ![Revenue by Store Size and Country](https://raw.githubusercontent.com/ilscarlson05-pixel/Store-revenue-analysis/main/47abfa6-1f24-de7a-6630-cc8ce2440178_1.webp)
 
+## Revenuu Visualization (Bar Chart)
+![WhatsApp Image 2025-11-08 at 09 32 09_8df5fa97](https://github.com/user-attachments/assets/dc29b4f3-efde-4e2b-ac57-37c05b349ddb)
+The grouped bar chart compares revenue from small, medium, and large stores for each country side by side.
+
+## Revenue Visualization (Stacked Bar Chart)
+![WhatsApp Image 2025-11-08 at 09 32 03_986df5e7](https://github.com/user-attachments/assets/cc7c2a97-af88-4dfb-b37a-35d9ca90e317)
+The stacked bar chart shows the total revenue contribution of each store type within each country, highlighting that the United States and Germany have the highest combined revenues, with medium stores contributing the most overall
+
 ## 💡 SQL Solution
 ```sql
 SELECT
